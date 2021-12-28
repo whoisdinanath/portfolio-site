@@ -1,0 +1,1 @@
+from portfolio_modified.wsgi import application

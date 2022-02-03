@@ -1,11 +1,10 @@
 from django.db import models
-from django.db.models.expressions import F
 
 
 # About Model
 class About(models.Model):
     name = models.CharField(max_length=30, null=False, default="Bibek Poudel")
-    work = models.CharField(max_length=30, default="Programmer", null=False)
+    work = models.CharField(max_length=30, null=False, default="Programmer")
     short_description = models.TextField()
     description = models.TextField()
     image = models.ImageField(upload_to="about")
